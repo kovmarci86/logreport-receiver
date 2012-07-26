@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show create="false" id="ps_com_mkovacs_reportmanager_domain_report_LogReport" object="${logreport}" path="/reports" update="false" z="N71nJlvzyaHSDISLQSXvR75oro4=">
+        <field:display field="message" id="s_com_mkovacs_reportmanager_domain_report_LogReport_message" object="${logreport}" z="M5OtetulwKOcZA67LSQS9WHz4zA="/>
+        <field:display field="causeStackTrace" id="s_com_mkovacs_reportmanager_domain_report_LogReport_causeStackTrace" object="${logreport}" z="AJ0XT+VDX1UOpDmEz7U36hTrF18="/>
+        <field:display field="application" id="s_com_mkovacs_reportmanager_domain_report_LogReport_application" object="${logreport}" z="2xI5RULR/0AE33XWM4MnfZVmQ34="/>
+        <field:display field="error" id="s_com_mkovacs_reportmanager_domain_report_LogReport_error" object="${logreport}" z="PLw/EFOJVRb5PSrxHsh0Gm0WTbM="/>
+        <field:display field="dates" id="s_com_mkovacs_reportmanager_domain_report_LogReport_dates" object="${logreport}" z="hpp/w0chEr/wBm51FH0VsmZgcQM="/>
+        <field:display field="device" id="s_com_mkovacs_reportmanager_domain_report_LogReport_device" object="${logreport}" z="KV1DGSThscJBRuZPQawhhjJXlcY="/>
+        <field:display field="log" id="s_com_mkovacs_reportmanager_domain_report_LogReport_log" object="${logreport}" z="3b7sSaJPH9zOyDhBlWAzdIXHVYw="/>
+        <field:display field="log" id="s_com_mkovacs_reportmanager_domain_report_LogReport_log" object="${logreport.log}"></field:display>
+        <field:display field="stackTrace" id="s_com_mkovacs_reportmanager_domain_report_LogReport_stackTrace" object="${logreport}" z="7LljePtjhkrWBxKVsRITceASsdc="/>
+        
+        
+    	    
+    </page:show>
+</div>

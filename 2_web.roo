@@ -1,0 +1,4 @@
+web mvc setup
+web mvc scaffold --class ~.web.LogReportController --backingType ~.domain.report.LogReport --path reports --disallowedOperations create,update
+json all
+web mvc json add --jsonObject ~.domain.report.LogReport --class ~.web.service.LogReportJsonController

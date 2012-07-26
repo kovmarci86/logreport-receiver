@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_mkovacs_reportmanager_domain_report_LogReport" items="${logreports}" z="gLJHjRaPBSTT4nxiG3WxhptNvL4=">
+        <table:table data="${logreports}" id="l_com_mkovacs_reportmanager_domain_report_LogReport" path="/reports" update="false" z="mpbNh3K9L4x9lv07PrsDFVcpBgA=">
+            <table:column id="c_com_mkovacs_reportmanager_domain_report_LogReport_message" property="message" z="DxFdxtSX/C79OZl38jz6Y4s8jjs=" maxLength="20"/>
+            <table:column id="c_com_mkovacs_reportmanager_domain_report_LogReport_dates" property="dates" z="dLuYb5L2gerf4/dxJqpfrHa1FHo="/>
+            <table:column id="c_com_mkovacs_reportmanager_domain_report_LogReport_application" property="application" z="dLuYb5L2gerf4/dxJqpfrHa1FHo="/>
+            <table:column id="c_com_mkovacs_reportmanager_domain_report_LogReport_error" property="error" z="Efb0jB+ZIEbCP+N47zM0yp331co="/>
+            <table:column id="c_com_mkovacs_reportmanager_domain_report_LogReport_device" property="device" z="geiCje+bBpvloAiioaX7aQXwb7o="/>
+            <table:column id="c_com_mkovacs_reportmanager_domain_report_LogReport_log" property="log" z="HM5fIzJyRF8MU+AmRgXjrvzsX74="/>
+        </table:table>
+    </page:list>
+</div>

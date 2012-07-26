@@ -1,0 +1,36 @@
+
+// Spring Roo 1.2.1.RELEASE [rev 6eae723] log opened at 2012-07-13 20:15:08
+project --topLevelPackage com.mkovacs.reportmanager
+persistence setup --provider HIBERNATE --database MYSQL --userName root --password agadou --databaseName logreport 
+entity jpa --class com.mkovacs.reportmanager.domain.report.Application
+field string --fieldName appPackage --sizeMax 512
+field num --fieldName versionCode --type java.lang.Long
+field string --fieldName versionName --sizeMax 256
+entity jpa --class ~.domain.report.Dates
+focus --class ~.domain.report.Dates
+field number --fieldName dateSystem --type java.lang.Long
+field string --fieldName locale
+entity jpa --class ~.domain.report.Device 
+focus --class ~.domain.report.Device
+field string --fieldName product 
+field number --fieldName orientation --type java.lang.Integer
+field string --fieldName model
+field string --fieldName buildType 
+field string --fieldName manufacturer
+field string --fieldName device
+field string --fieldName brand
+field string --fieldName display
+field string --fieldName resolution
+field string --fieldName androidVersion
+entity jpa --class ~.domain.report.Log
+// field set --fieldName log --type ~.domain.report.LogEntry
+field number --fieldName numberOfEntry --type java.lang.Integer
+entity jpa --class ~.domain.report.LogReport
+field string --fieldName message --sizeMax 32672
+field string --fieldName causeStackTrace  --sizeMax 32672
+field reference --fieldName application --type ~.domain.report.Application --cardinality ONE_TO_ONE
+field string --fieldName error --sizeMax 32672
+field reference --fieldName dates --type ~.domain.report.Dates --cardinality ONE_TO_ONE 
+field reference --fieldName device --type ~.domain.report.Device --cardinality ONE_TO_ONE 
+field reference --fieldName log --type ~.domain.report.Log --cardinality ONE_TO_ONE 
+field string --fieldName stackTrace --sizeMax 32672
